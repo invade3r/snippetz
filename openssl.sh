@@ -1,3 +1,4 @@
+```bash
 #### Convert cert and private key to pfx ####################################
 
 # Convert p7b to pem (intermediates)
@@ -58,3 +59,4 @@ openssl x509 -signkey domain.key -in domain.csr -req -days 365 -out domain.crt
 # Selfsigned oneliner - Remove -nodes to password protect key
 
 openssl req -nodes -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365
+```
